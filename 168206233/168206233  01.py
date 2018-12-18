@@ -1,4 +1,5 @@
 #coding:utf-8
+'''python 接触较少 仍停留在之前的学习记忆中 使用的是2.0编译 '''
 
 def partion(nums,left,right):
     key = nums[left]
