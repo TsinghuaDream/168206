@@ -34,5 +34,5 @@ def MwaitFSkj #用等差数列求和再求均值 难点在于烤炉 还好只有
       print('mean is ',t2,'min')
   else:
     n=n/2
-    int t2=6n+n(n-1)/2*(6+t)/n
+    int t2=6*n+n*(n-1)/2*(6+t)/n
     print('mean is ',t2,'min')
