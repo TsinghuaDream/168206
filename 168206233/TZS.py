@@ -1,8 +1,14 @@
-#偷钻石问题
-#所有人都带有指向性 指向其他人是罪犯 或者指向自己是好人
-#可以建立三维数组 第一个数字表明自己 第二个数字表明指向的人 第三个为boolean类型 存放指向者的身份定义
-#然后分析他们语言的一些关键字 如同 我 2 3 4... 是 不是 罪犯 定义他们的第三个数
-#然后用for循环 遍历数组 通过正在循环中的数组 定义其他人的语言的真假性 也就是他们数组的第三个值
-#最后 筛选出满足条件的结果
-#具体代码如下
-#晚上打吧 好累
+suspects = ['A', 'B', 'C', 'D']
+criminal_dict = {0: 'innocent', 1: 'guilty'}
+n = 1
+
+for a in range(0, 2):
+    for b in range(0,2):
+        for c in range(0,2):
+            for d in range(0,2):
+                  if (a + b >= 1) and (a + e + f >= 2) and (a * d == 0) and (b == c) and (c + d == 1) and (d >= e): 
+                            result = zip(suspects, [criminal_dict[a], criminal_dict[b], criminal_dict[c], criminal_dict[d])
+                            print "第%d种作案方案:" %(n)
+                            print result
+                            n = n + 1
+print "\n总共有%d种作案方案" % (n-1)
